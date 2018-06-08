@@ -1,22 +1,25 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "dromozoa-sqlite3"
-version = "1.5-1"
+version = "1.6-1"
 -- LuaDist source
 source = {
-  tag = "1.5-1",
+  tag = "1.6-1",
   url = "git://github.com/LuaDist-testing/dromozoa-sqlite3.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/dromozoa/dromozoa-sqlite3/archive/v1.5.tar.gz";
---   file = "dromozoa-sqlite3-1.5.tar.gz";
+--   url = "https://github.com/dromozoa/dromozoa-sqlite3/archive/v1.6.tar.gz";
+--   file = "dromozoa-sqlite3-1.6.tar.gz";
 -- }
 description = {
   summary = "Lua bindings for SQLite3";
   license = "GPL-3";
   homepage = "https://github.com/dromozoa/dromozoa-sqlite3/";
   maintainer = "Tomoyuki Fujimori <moyu@dromozoa.com>";
+}
+dependencies = {
+  "dromozoa-commons";
 }
 build = {
   type = "make";
@@ -27,6 +30,7 @@ build = {
     LUA_LIBDIR = "$(LUA_LIBDIR)";
   };
   install_variables = {
+    LUADIR = "$(LUADIR)";
     LIBDIR = "$(LIBDIR)";
   };
 }
