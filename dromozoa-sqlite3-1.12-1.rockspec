@@ -1,16 +1,16 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "dromozoa-sqlite3"
-version = "1.11-1"
+version = "1.12-1"
 -- LuaDist source
 source = {
-  tag = "1.11-1",
+  tag = "1.12-1",
   url = "git://github.com/LuaDist-testing/dromozoa-sqlite3.git"
 }
 -- Original source
 -- source = {
---   url = "https://github.com/dromozoa/dromozoa-sqlite3/archive/v1.11.tar.gz";
---   file = "dromozoa-sqlite3-1.11.tar.gz";
+--   url = "https://github.com/dromozoa/dromozoa-sqlite3/archive/v1.12.tar.gz";
+--   file = "dromozoa-sqlite3-1.12.tar.gz";
 -- }
 description = {
   summary = "Lua bindings for SQLite3";
